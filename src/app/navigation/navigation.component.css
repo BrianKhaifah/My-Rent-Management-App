@@ -1,0 +1,30 @@
+*{
+  text-decoration: none;
+  list-style: none;
+
+}
+.btn{
+  color: whitesmoke;
+}
+
+.cool{
+
+  background-color: rgb(40, 46, 62);
+  border-radius: 10px;
+  /* padding-left: 10%; */
+  text-align: center;
+
+}
+.space, a{
+
+  padding: 15px 30px;
+  font-size: 30px;
+  color: whitesmoke;
+
+}
+.space a:hover{
+
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}

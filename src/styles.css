@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+* li{
+  text-decoration: none;
+  list-style: none;
+
+}
+h1 {
+  text-align: center;
+
+}
+body {
+
+  /* background: url("https://www.homes.com/images/home/hero-desktop.jpg")no-repeat center center;
+  background-color: black;
+  color: green;
+  background-size: 100% 100%;
+  height: auto;
+  padding: 50px; */
+
+}
+.btn{
+
+  width: 200px;
+
+}

@@ -1,0 +1,21 @@
+.colour{
+  background-color: rgb(40, 46, 62);
+  padding: 3%;
+
+}
+h3{
+  color: whitesmoke;
+}
+#foot, i{
+  width: 200px;
+  color: green;
+}
+.fab, P{
+  color: whitesmoke;
+
+}
+
+.fab:hover{
+  background-color: rgb(40, 46, 62);
+  color: green;
+}

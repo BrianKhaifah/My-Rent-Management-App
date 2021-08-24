@@ -1,0 +1,14 @@
+.container{
+  width: 100%;
+  height: auto;
+  font-size: 70px;
+  padding-top: 50px;
+  border-radius: 20px;
+
+}
+p{
+  font-family: 'Pacifico', cursive;
+  color: whitesmoke;
+}
+
+
