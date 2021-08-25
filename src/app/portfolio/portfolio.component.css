@@ -8,8 +8,18 @@
 #paragraph{
   font-size: 30px;
   padding: 20px;
+  font-family: "Sofia", sans-serif;
+
 }
 
 .row{
   justify-content: space-evenly;
+}
+
+#container {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Sofia", sans-serif;
+
+
 }
