@@ -14,6 +14,8 @@ import { AboutdetailsComponent } from './aboutdetails/aboutdetails.component';
 import { AboutportfolioComponent } from './aboutportfolio/aboutportfolio.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactUSComponent } from './contact-us/contact-us.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { ContactUSComponent } from './contact-us/contact-us.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

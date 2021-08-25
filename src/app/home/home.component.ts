@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
 
 
  findProperty(){
+  console.log("This is before this.rentService")
   this.rentservice.getProperties().subscribe(profile =>{
     console.log(profile);      
   });
@@ -22,6 +23,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
 
    this.findProperty()
+   console.log("This is working fine")
   }
 
 }

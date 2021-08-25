@@ -6,88 +6,30 @@
 
    <div class="row">
 
+    
+    <div class="row">
 
-    <div class="col-md-4">
+      <div class="col-md-4" *ngFor="let property of properties">
 
+        <div class="box">
 
-      <div class="box">
+          <img src="https://bmglanders.baymgmtgroup.com/wp-content/uploads/rent-collection-icon.png" alt="" id="image">
 
-        <img src="
+          <h2>{{property.name}}</h2>
 
-        https://images.pexels.com/photos/5178068/pexels-photo-5178068.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
-        " alt="" id="image">
+          <p ngIf* = !clicked  >
+            {{property.description}}
+            {{property.description}}
+            {{property.description}}
+          </p>
 
-        <h1>Buy a Home</h1>
+          <a routerLink="/home"><button type="button" (click) = "toggel()" class="btn btn-outline-success">Property Details</button></a>
 
-        <p>
-
-          Find  your place with an immersive photo <br>
-        experience and the most listings, including <br>
-      things you won't find anywhere else
-
-    </p>
-        <button type="button" class="btn btn-outline-success">Search Homes</button>
-
-
+        </div>
 
       </div>
 
     </div>
-
-    <div class="col-md-4">
-
-
-      <div class="box">
-
-        <img src="
-        https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
-        " alt="" id="image">
-
-        <h1>Sell a Home</h1>
-
-        <p>
-          Whether you get a cash offer through our <br>
-        Offers or choose to sell traditionally , we <br>
-       can help you navigate a successful sale.
-
-      </p>
-        <button type="button" class="btn btn-outline-success">See your Option</button>
-
-
-
-      </div>
-
-    </div>
-
-    <div class="col-md-4">
-
-
-      <div class="box">
-
-        <img src="
-
-        https://images.pexels.com/photos/5071170/pexels-photo-5071170.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
-
-        " alt="" id="image">
-
-        <h1>Rent a Home</h1>
-
-        <p>
-
-          We're creating a seamless online experience <br>
-        from shopping on the largest rental <br>
-      network, to applying rent
-
-    </p>
-
-        <button type="button" class="btn btn-outline-success">Find Rental</button>
-
-
-
-      </div>
-
-    </div>
-
 
    </div>
 
