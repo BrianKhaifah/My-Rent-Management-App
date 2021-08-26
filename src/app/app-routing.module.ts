@@ -7,6 +7,8 @@ import { AppComponent  } from './app.component';
 import { ContactUSComponent } from './contact-us/contact-us.component';
 import { AccountComponent } from './account/account.component';
 
+import { PropertyDetailComponent } from './property-detail/property-detail.component';
+import { PropertyComponent } from './property/property.component';
 
 
 const routes: Routes = [
@@ -14,6 +16,10 @@ const routes: Routes = [
   { path:'about', component: AboutComponent},
   { path: 'home',component: HomeComponent},
   { path: 'contactUS', component: ContactUSComponent},
+  { path:'property', component: PropertyComponent},
+  { path:'property/:id', component: PropertyDetailComponent},
+  { path:'addtenant/', component: PropertyDetailComponent},
+  { path:'addpayment', component: PropertyDetailComponent},
   { path: '', redirectTo:"/home", pathMatch:"full"}
 ];
 

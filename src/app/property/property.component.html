@@ -1,0 +1,48 @@
+<div id="land">
+
+  <div class="text-center land">
+
+    <h1>heading</h1>
+
+  </div>
+
+  <div class="row">
+
+    <div *ngFor="let property of properties">
+      <h2>{{property.name}}</h2>
+      <a [routerLink]="['property', property]">view details</a>
+    </div>
+
+
+
+  </div>
+
+</div>
+
+
+<!--
+    <div class="row">
+
+      <div class="col-md-4" *ngFor="let property of properties">
+
+        <div class="box">
+
+          <img src="https://bmglanders.baymgmtgroup.com/wp-content/uploads/rent-collection-icon.png" alt="" id="image">
+
+
+          <h2>{{property.name}}</h2>
+
+          <p>
+            {{property.description}}
+            <!-- {{property.description}}
+            {{property.description}} -->
+          <!-- </p> -->
+
+          <!-- <a routerLink="/home"><button type="button" class="btn btn-outline-success">Property Details</button></a>
+
+        </div>
+
+      </div>
+
+    </div> -->
+  -->

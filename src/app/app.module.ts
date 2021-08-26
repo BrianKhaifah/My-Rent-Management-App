@@ -14,12 +14,13 @@ import { AboutdetailsComponent } from './aboutdetails/aboutdetails.component';
 import { AboutportfolioComponent } from './aboutportfolio/aboutportfolio.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactUSComponent } from './contact-us/contact-us.component';
-<<<<<<< HEAD
 import { AccountComponent } from './account/account.component';
-=======
 import { HttpClientModule } from '@angular/common/http';
+import { PropertyComponent } from './property/property.component';
+import { PropertyDetailComponent } from './property-detail/property-detail.component';
 
->>>>>>> dc3b07011c81687074608e8810196af66fdbe0a9
+
+
 
 @NgModule({
   declarations: [
@@ -35,7 +36,9 @@ import { HttpClientModule } from '@angular/common/http';
     AboutportfolioComponent,
     FooterComponent,
     ContactUSComponent,
-    AccountComponent
+    AccountComponent,
+    PropertyComponent,
+    PropertyDetailComponent
   ],
   imports: [
     BrowserModule,
