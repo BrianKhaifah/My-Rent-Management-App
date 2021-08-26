@@ -14,7 +14,12 @@ import { AboutdetailsComponent } from './aboutdetails/aboutdetails.component';
 import { AboutportfolioComponent } from './aboutportfolio/aboutportfolio.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactUSComponent } from './contact-us/contact-us.component';
+<<<<<<< HEAD
 import { AccountComponent } from './account/account.component';
+=======
+import { HttpClientModule } from '@angular/common/http';
+
+>>>>>>> dc3b07011c81687074608e8810196af66fdbe0a9
 
 @NgModule({
   declarations: [
@@ -34,7 +39,8 @@ import { AccountComponent } from './account/account.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
