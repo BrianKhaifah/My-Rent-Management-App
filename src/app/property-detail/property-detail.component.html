@@ -1,19 +1,59 @@
-<p>property-details works!</p>
+
+
+<div class="row text-center p-2">
+
+  <h1> Your property-details ! </h1>
+
+  <div class="col-md-6 bak">
+
+
+    <img src="
+
+    https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+    " alt="" id="style">
+
+
+  </div>
+
+  <div class="col-md-6 ">
+
+    <div class="text-center">
+
+      <h2>Property name: <br> <br> </h2>
+
+      <p> <span id="spa">  {{name}}  </span></p>
+
+      <h2> Description:  </h2>
+
+      <p> <br> <span id="spa"> {{description}} </span> </p>
+
+      <h2> Location:  </h2>
+
+      <p> <br> <br> <span id="spa"> {{location}} </span> </p>
+
+      <div *ngIf="occupied">
+
+          <!-- <app-addpayment []><> -->
+
+      </div>
+
+      <div *ngIf="!occupied">
+
+          <p>Add tenant</p>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+</div>
 <div>
-  <h2>Property name: {{name}}</h2>
-  <p>Description: {{description}}</p>
-  <p>Location: {{location}}</p>
 
-  <div *ngIf="occupied">
-      <!-- <app-addpayment []><> -->
-
-  </div>
-
-  <div *ngIf="!occupied">
-      <p>Add tenant</p>
-
-  </div>
-
+  <app-footer></app-footer>
 
 
 </div>
