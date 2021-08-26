@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { Iproperty } from './interfaces/property';
 
 const httpOptions = {
-  headers: new HttpHeaders({ 
+  headers: new HttpHeaders({
     'Access-Control-Allow-Origin':'*',
     'Authorization':'authkey',
     'userid':'1'
@@ -20,19 +20,20 @@ export class RentService {
   constructor(private http: HttpClient) {
 
    }
-   
-  getProperties():Observable<Iproperty>{
-    return this.http.get<Iproperty>("https://rent-management-app.herokuapp.com/properties",httpOptions);
 
-  }  
-  
+  getProperties():Observable<Iproperty>{
+    
+    return this.http.get<Iproperty>("https://rent-management-api.herokuapp.com/properties",httpOptions);
+
+  }
+
   getTenants(){
-    return this.http.get("https://rent-management-app.herokuapp.com/tenants");
-  
-  }  
-  
+    return this.http.get("https://rent-management-api.herokuapp.com/tenants");
+
+  }
+
   getPayments(){
-    return this.http.get("https://rent-management-app.herokuapp.com/payments");
-  
-  }  
+    return this.http.get("https://rent-management-api.herokuapp.com/payments");
+
+  }
 }

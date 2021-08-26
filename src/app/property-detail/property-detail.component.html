@@ -15,42 +15,47 @@
 
   </div>
 
-  <div class="col-md-6 ">
+  <div class="col-md-6">
 
-    <div class="text-center">
+        <div class="text-center">
 
-      <h2>Property name: <br> <br> </h2>
+          <h2>Property name: <br> <br> </h2>
 
-      <p> <span id="spa">  {{name}}  </span></p>
+          <p> <span id="spa">  {{name}}  </span></p>
 
-      <h2> Description:  </h2>
+          <h2> Description:  </h2>
 
-      <p> <br> <span id="spa"> {{description}} </span> </p>
+          <p> <br> <span id="spa"> {{description}} </span> </p>
 
-      <h2> Location:  </h2>
+          <h2> Location:  </h2>
 
-      <p> <br> <br> <span id="spa"> {{location}} </span> </p>
+          <p> <br> <br> <span id="spa"> {{location}} </span> </p>
 
-      <div *ngIf="occupied">
+          <div *ngIf="type=='false'">
 
-          <!-- <app-addpayment []><> -->
+            <app-tenant [propertyId]="id"></app-tenant>
 
-      </div>
+        </div>
 
-      <div *ngIf="!occupied">
-
-          <p>Add tenant</p>
-
-      </div>
-
-
-
-    </div>
+        </div>
 
   </div>
 
 
 </div>
+
+<div class="text-center">
+
+    <div *ngIf="type=='true'">
+
+      <app-payment></app-payment>
+
+  </div>
+
+
+
+</div>
+
 <div>
 
   <app-footer></app-footer>

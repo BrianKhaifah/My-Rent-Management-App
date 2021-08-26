@@ -6,16 +6,48 @@
 
   </div>
 
-  <div class="row">
+  <div class="row p-5">
+
+    <div class="col-md-6">
+
+      <img src="
+
+      https://images.pexels.com/photos/1974596/pexels-photo-1974596.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
+
+      " alt="" id="image">
+
+
+    </div>
+
+    <div class="col-md-6 size">
+
+
+  <div class="text-center ">
 
     <div *ngFor="let property of properties">
+
       <h2>{{property.name}}</h2>
-      <a [routerLink]="['property', property]">view details</a>
+
+      <br>
+      
+      <a [routerLink]="['property', property]">
+
+        <button type="button" class="btn btn-success">view details</button>
+
+      </a>
     </div>
 
 
 
   </div>
+    </div>
+  </div>
+
+</div>
+
+<div>
+
+  <app-footer></app-footer>
 
 </div>
 
